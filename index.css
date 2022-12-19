@@ -10,7 +10,7 @@ header{
     padding: 1rem 1rem 0rem 1rem;
 }
 
-header a{
+header h1{
     display: flex;
     /* 令物件有flex特性 會橫向排列是因為預設flex-diretion是row*/
     justify-content: center;
@@ -204,7 +204,7 @@ div.footCard{
 }
 
 @media screen and (max-width: 550px){
-    header a{
+    header h1{
         font-size: 24px;
     }
     nav ul li a{
