@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navigation */
+nav{
+    z-index: 0;
+    position:sticky;
+    /* 使物件能固定在畫面某處 */
+    top: 0;
+    /* 某處 */
+}
+
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* 當物件受擠壓時會往下排列 */
+    justify-content:center;
+
+    background-color: rgb(236, 236, 236);
+    list-style-type: none;
+    /* 將list的．去掉 */
+    
+    box-shadow: 0px 6px 6px -6px rgb(116, 116, 116);
+    /* h-shadow v-shadow 模糊半徑 擴散距離(若為負責減少陰影範圍) */
+}
+
+nav ul li{
+    padding: 0.75rem 0.8rem 0.75rem 0.8rem;
+}
+
+nav ul li a{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    transition: 0.3s;
+    /* 動畫轉變幾秒 */
+
+    text-decoration: none;
+    /* 文字裝飾關閉 也就是超連結下的底線 */
+}
+
+nav ul li a:hover{
+    color: #1ebdb2;
+}
+
+section.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section.first h1{
+    font-size: 3.5rem;
+    margin: 3rem 0rem 2rem 0rem;
+}
+
+section.first h3{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+section.first h4{
+    font-size: 1.3rem;
+}
+
+section.first a{
+    text-decoration: none;
+    margin-top: 1rem;
+    color: white;
+    background-color: #1ebdb2;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10%;
+}
+
+section.cards{
+    display: flex;
+    width: 90%;
+    min-height: 75vh;
+    flex-wrap: wrap;
+}
+
+div.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 1rem;
+    flex: 1 1 300px;
+}
+
+div.card img{
+    margin: 1rem 0rem;
+    width: 16vw;
+    height: 16vw;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(78, 78, 78);
+    min-height: 10vh;
+}
+
+section.footCards{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 80%;
+}
+
+section.footCards h4{
+    font-size: 1.25rem;
+    margin: 2rem 0rem;
+    color: white;
+}
+
+section.footCards h3{
+    font-size: 2.25rem;
+    color: white;
+}
+
+section.footCards a{
+    text-decoration: none;
+    color: white;
+}
+
+div.footCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    flex: 1 1 300px;
+}
+
+@media screen and (max-width: 550px){
+    div.card img{
+        width: 40vw;
+        height: 40vw;
+    }
+}
