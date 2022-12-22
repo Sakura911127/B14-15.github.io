@@ -143,8 +143,8 @@ div.footCard{
 
 @media screen and (max-width: 550px){
     div.card img{
-        width: 50vw;
-        height: 50vw;
+        width: 60vw;
+        height: 60vw;
     }
     nav ul li a{
         font-size: 1rem;
