@@ -98,7 +98,46 @@ div.card{
 div.card img{
     margin: 1rem 0rem;
     width: 16vw;
-    height: 16vw;
+    height:16vw;
+}
+
+/* items */
+section.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 70%; */
+    min-height: 70vh;
+    flex-wrap: wrap;
+    padding: 1rem;
+    flex: 1 1 300px;
+}
+
+div.left img{
+    margin-right: 1rem;
+    width: 25vw;
+    height: 25vw;
+}
+
+div.right{
+    margin-left: 1rem;
+}
+
+div.right h3{
+    font-size: 2rem;
+}
+
+div.right p{
+    font-size: 1.5rem;
+}
+
+div.right button{
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.25rem;
+    background-color: red;
+    color: white;
+    font-size: 1.3rem;
 }
 
 /* footer */
@@ -152,5 +191,9 @@ div.footCard{
     section.first h1{
         font-size: 2.5rem;
         margin: 2.5rem 0rem 1rem 0rem;
+    }
+    div.left img{
+        width: 60vw;
+        height: 60vw;
     }
 }
