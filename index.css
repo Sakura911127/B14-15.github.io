@@ -158,6 +158,7 @@ div.card{
 
 div.img-container{
     overflow: hidden;
+    margin: 1rem 0rem;
     width: 16vw;
     height: 16vw;
     border-radius: 50%;
@@ -173,7 +174,7 @@ div.card img{
 }
 
 div.card img:hover{
-    transform: scale(1.2);   
+    transform: scale(1.5);   
 }
 
 /* footer */
