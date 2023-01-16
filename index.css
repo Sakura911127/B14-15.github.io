@@ -156,12 +156,24 @@ div.card{
     /* grow寬度成長直 shrink寬度縮小倍率 basis寬度最小值 */
 }
 
+div.img-container{
+    overflow: hidden;
+    width: 16vw;
+    height: 16vw;
+    border-radius: 50%;
+}
+
 div.card img{
     margin: 1rem 0rem;
     width: 16vw;
     height: 16vw;
     border-radius: 50%;
     /* 調整半徑 */
+    transition: all 0.2s;
+}
+
+div.card img:hover{
+    transform: scale(1.2);   
 }
 
 /* footer */
